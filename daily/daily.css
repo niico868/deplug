@@ -72,7 +72,7 @@ span {
 
 * {
     margin: 0;
-    padding; 0;
+    padding: 0;
     font-family: poppins;
     box-sizing: border box;
 }
@@ -91,8 +91,12 @@ ul {
 body {
     background: #F2F2F2;
     margin: 0;
-    padding; 0;
+    padding: 0;
     font-family: "Poppins";
+}
+
+link {
+    color: rgb(164, 164, 221);
 }
 
 .hero {
@@ -168,13 +172,14 @@ body {
 
 .blog-box {
     width: 350px;
+    height: 350px;
     background-color: #ffffff;
     border: 1px solid #ececec;
     margin: 20px;
 }
 
 .blog-img {
-    width: 100%
+    width: 100%;
     height: auto;
 }
 
@@ -199,7 +204,7 @@ body {
 }
 
 .blog-text span {
-    color: #f33c3c
+    color: #f33c3c;
     font-size: 0.6rem;
 }
 
@@ -226,7 +231,7 @@ body {
 }
 
 .blog-text a {
-    color: #0f0f0f;
+    color: #422c86;
 }
 
 .blog-text a:hover {
