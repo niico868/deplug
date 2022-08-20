@@ -262,14 +262,14 @@ nav li a:hover {
   .navbar nav li.current a {
     font-weight: bold;
   }
-  .navbar nav li.go-premium-cta a {
+  .navbar nav li.plug-in-cta a {
     color: var(--primary-color);
     border: 3px solid var(--primary-color);
     font-weight: bold;
     border-radius: 5em;
     margin-top: -0.2em;
   }
-  .navbar nav li.go-premium-cta a:hover {
+  .navbar nav li.plug-in-cta a:hover {
     background: var(--primary-color);
     color: white;
   }
