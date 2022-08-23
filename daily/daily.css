@@ -276,7 +276,7 @@ text {
       font-weight: bold;
       border-radius: 5em;
       margin-top: -0.2em;
-      align: center;
+      align-items: center;
     }
     .navbar nav li.plug-in-cta a:hover {
       background: var(--primary-color);
@@ -519,4 +519,81 @@ text {
     }
   }
 
-  /* Footer End */
+/* Footer End */
+
+
+/* Typewriter Animation */
+
+.type{
+    margin-top: 1em;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-right: 4px solid black;
+    font-size: 180%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.animation{
+  animation: typewriter 7s steps(37) 1s infinite both,
+             blinkCursor 500ms steps(37) infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 580px;
+  }
+}
+
+@keyframes blinkCursor{
+  from {
+    border-right-color: rgb(214, 35, 35);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@media only screen and (min-width: 600px){
+  .type{
+    margin-top: 1em;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-right: 4px solid black;
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .animation{
+    animation: typewriter 7s steps(37) 1s infinite both,
+               blinkCursor 500ms steps(37) infinite;
+  }
+
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 350px;
+    }
+  }
+
+  @keyframes blinkCursor{
+    from {
+      border-right-color: rgb(214, 35, 35);
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+}
+
+/* Typewriter Animation */
