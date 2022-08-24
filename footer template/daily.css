@@ -115,6 +115,10 @@ link {
     margin-top: 0.2em;
 }
 
+.footer-bullet {
+  list-style: none;
+}
+
 .left-col .submit-content-cta {
     display: inline-block;
     margin-top: 1em;
@@ -352,34 +356,6 @@ text {
   .images-area img{
     width: 100%;
     transition: 0.3s cubic-bezier(.79,.03,0,.99);
-  }
-
-  .footer-bullet {
-    list-style: none;
-  }
-
-  button, input[type="submit"], input[type="reset"] {
-    background: none;
-    color: inherit;
-    border: none;
-    padding: 0;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
-  }
-
-  button {
-    width: 6em
-  }
-  
-  button:hover span {
-    display: none
-  }
-  
-  button:hover:before {
-    margin-left: 6px;
-    content: "deplug868@gmail.com";
-    color: #e12c45;
   }
   
   /* Buttons Area  */
