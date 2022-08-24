@@ -367,20 +367,6 @@ text {
     cursor: pointer;
     outline: inherit;
   }
-
-  button {
-    width: 6em
-  }
-  
-  button:hover span {
-    display: none
-  }
-  
-  button:hover:before {
-    margin-left: 6px;
-    content: "deplug868@gmail.com";
-    color: #e12c45;
-  }
   
   /* Buttons Area  */
   .buttons-area{
@@ -460,6 +446,20 @@ text {
 
 
   /* Footer Start */
+
+  button {
+    width: 6em
+  }
+  
+  button:hover span {
+    display: none
+  }
+  
+  button:hover:before {
+    margin-left: 6px;
+    content: "deplug868@gmail.com";
+    color: #e12c45;
+  }
 
   .footer-distributed {
     background-color: #292c2f;
