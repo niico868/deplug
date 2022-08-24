@@ -565,19 +565,19 @@ text {
 }
 
 .animation{
-  animation: typewriter 7s steps(37) 1s infinite both,
-             blinkCursor 500ms steps(37) infinite;
+  animation: typewriter 4.5s steps(25) 1s infinite both,
+             blinkCursor 500ms steps(25) infinite;
 }
 
 @keyframes typewriter {
   from {
-    width: 0;
+    width: 0px;
   }
   to {
-    width: 580px;
+    width: 414px;
   }
 }
-
+z
 @keyframes blinkCursor{
   from {
     border-right-color: rgb(214, 35, 35);
