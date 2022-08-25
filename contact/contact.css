@@ -140,6 +140,14 @@ link {
     background-color: #46F757;
 }
 
+.form-area {
+    height: 100vh;
+    width: 100vw;
+}
+
+#form {
+    text-align: center;
+}
 /*--blog-----------------------*/
 
 #blog {
@@ -550,41 +558,31 @@ text {
 
 
 /* Typewriter Animation */
-
-.type{
-    margin-top: 1em;
+.line-1{
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-right: 4px solid black;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
     font-size: 180%;
+    text-align: center;
     white-space: nowrap;
     overflow: hidden;
+    transform: translateY(-50%);    
 }
 
-.animation{
-  animation: typewriter 4.5s steps(25) 1s infinite both,
-             blinkCursor 500ms steps(25) infinite;
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
 }
-
-@keyframes typewriter {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 414px;
-  }
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 11em;}
 }
-
-@keyframes blinkCursor{
-  from {
-    border-right-color: rgb(214, 35, 35);
-  }
-  to {
-    border-right-color: transparent;
-  }
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(227, 26, 26, 0.75);}
+  to{border-right-color: transparent;}
 }
-
 
 /* Typewriter Animation */

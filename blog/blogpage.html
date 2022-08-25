@@ -7,7 +7,8 @@
     <meta description="", keywords="">
     <link rel="stylesheet" href="blogpage.css">
     <link rel="shortcut icon" href="">
-    <script src="https://kit.fontawesome.com/82faf7bfec.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/82faf7bfec.js" src="blogpage.js" crossorigin="anonymous"></script>
+    <script src="blogpage.js"></script>
 </head>
 <body>
     <div class="navbar">
@@ -19,14 +20,14 @@
             <nav class="navbar">
                 <img id="mobile-exit" class="mobile-menu-exit" src="/images/exit.svg" alt="close nav">
                 <ul class="primary-nav">
-                    <li><a href="#">Home</a></li>
-                    <li class="current"><a href="#">Blog Space</a></li>
-                    <li><a href="#">Daily Media</a></li>
+                    <li><a href="/main/index.html">Home</a></li>
+                    <li class="current"><a href="/blog/blogpage.html">Blog Space</a></li>
+                    <li><a href="/daily/daily.html">Daily Media</a></li>
                 </ul>
 
                 <ul class="secondary-nav">
-                    <li><a href="#">Contact</a></li>
-                    <li class="plug-in-cta"><a href="#">Plug In</a></li>
+                    <li><a href="/contact/contactpage.html">Contact</a></li>
+                    <li class="plug-in-cta"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeAkE1hBo4WvBxs09Y76iingNiA8r7doGa68M3cIC9mzvjb6Q/viewform?usp=sf_link"">Plug In</a></li>
                 </ul>
             </nav>
         </div>
@@ -51,7 +52,7 @@
 
         </div>
         <!--blog-container--------->
-        <div class="blog-container">
+        <div class="blog-container" style="display: flex;"">
             <!--box-1------------>
             <div class="blog-box">
                 <!--img-------------->
@@ -67,9 +68,27 @@
                         colonies (1838), Emancipation Day — a public holiday — is usually marked
                         with street processions (a morning procession, including towering moko
                         jumbies, and a flambeaux-lit Canboulay procession in the evening); religious
-                        and spiritual observances...
+                        and spiritual <span id="dots">...</span>
+                        <span style="color:#424342;" id="more">
+                            observances; cultural shows and performances (dance, music, and theatre, including by artistes from across the African diaspora); films and lectures (including the Africa Film Festival); exhibitions of African art; a trade exposition; performances (featuring local and international acts); and countless events and activities nationwide. The Lidj Yasu Omowale Emancipation Village in Port of Spain is traditionally the centre of the activities, which also hosts craft and clothing stalls. Many of the commemorative events take place both before and after Emancipation Day.
+
+                            History
+                            The first step: abolishing the slave trade
+                            On 25 March, 1807, the British parliament in London passed a law formally abolishing the slave trade in the British Empire. The United States followed suit by banning the importation of slaves from 1 January, 1808. It took much longer to end slavery altogether, however — freedom for existing slaves did not come for several more decades.
+                            The emancipation movement gained traction on humanitarian grounds, as abolitionists campaigned to end the barbaric trade. A pragmatic, economic argument was also being made, as beet sugar producers in Europe were undercutting the market for cane sugar, and the Industrial Revolution ushered in a new era of mechanisation that made slave labour much less economically attractive or competitive. And for 200 years, enslaved people in the Caribbean mounted dozens of insurrections that forced colonial powers’ hands. As Trinidad & Tobago’s first prime minister Dr Eric Williams stated in From Columbus to Castro:
+                            Negro revolt in the British West Indies in the early 19th century, designed to abolish slavery from below, was widely apprehended, both in the West Indies and in Britain … In the British West Indies, it was no longer a question of slave rebellions if, but slave rebellions unless emancipation was decreed.
+
+                            Emancipation — but first, “apprenticeship”
+                            In 1833, Thomas Buxton presented the Emancipation Bill to the parliament, which was passed and came into effect on 1 August 1834. However, it was not for another four years, after a period of “apprenticeship”, that freedom came to the enslaved in the British colonies, including to the approximately 20,000 in Trinidad & Tobago. These slaves were descended predominantly from the Yoruba, Hausa, Congo, Ibo, Rada, Mandingo, Kromanti (Koromantyn), and Temne tribes in West Africa.
+                            After 1838, many former slaves moved off the plantations and settled into nearby villages — like Arouca, Belmont, Laventille. These settlements also attracted former slaves from other British colonies like Barbados, Grenada, and St Vincent. Some continued to access land on which to grow crops; others headed to the cities to become tradesmen, artisans, and domestic workers.
+
+                            Emancipation then came to the French territories in 1848, the US in 1865, and Brazil in 1888. But it was in March 1807 that the first legal move was made to end the “African holocaust” that shipped up to 20 million people in horrendous conditions across the Atlantic, and forced them into forced labour in inhumane conditions for the rest of their lives.
+
+                            Emancipation Day as public holiday
+                            Just over 150  years later, on 1 August 1985, the Trinidad & Tobago government declared Emancipation Day a national holiday — thus becoming the first independent country in the world to declare a national public holiday to commemorate the abolition of slavery. (Notably, the day was declared a public holiday in Jamaica in 1893, but the holiday was abolished in 1962 upon the island’s independence from Britain).  The holiday in Trinidad & Tobago replaced Columbus Discovery Day, which had marked Christopher Columbus’ arrival in Trinidad on 31 July, 1498. Today, most of the Anglophone Caribbean nations also have annual Emancipation Day celebrations.
+                        </span>
                     </p>
-                    <a href="#"> Read On</a>
+                    <button onclick="myFunction()" id="myBtn">Read On</button>
                 </div>
             </div>
 
