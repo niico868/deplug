@@ -115,10 +115,6 @@ link {
     margin-top: 0.2em;
 }
 
-.footer-bullet {
-  list-style: none;
-}
-
 .left-col .submit-content-cta {
     display: inline-block;
     margin-top: 1em;
@@ -144,6 +140,14 @@ link {
     background-color: #46F757;
 }
 
+.form-area {
+    height: 100vh;
+    width: 100vw;
+}
+
+#form {
+    text-align: center;
+}
 /*--blog-----------------------*/
 
 #blog {
@@ -357,6 +361,20 @@ text {
     width: 100%;
     transition: 0.3s cubic-bezier(.79,.03,0,.99);
   }
+
+  .footer-bullet {
+    list-style: none;
+  }
+
+  button, input[type="submit"], input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
   
   /* Buttons Area  */
   .buttons-area{
@@ -433,9 +451,22 @@ text {
   }
   
   /* End Wrapper */
-
-
+  
   /* Footer Start */
+
+  button {
+    width: 6em
+  }
+  
+  button:hover span {
+    display: none
+  }
+  
+  button:hover:before {
+    margin-left: 6px;
+    content: "deplug868@gmail.com";
+    color: #e12c45;
+  }
 
   .footer-distributed {
     background-color: #292c2f;
@@ -527,41 +558,31 @@ text {
 
 
 /* Typewriter Animation */
-
-.type{
-    margin-top: 1em;
+.line-1{
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-right: 4px solid black;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
     font-size: 180%;
+    text-align: center;
     white-space: nowrap;
     overflow: hidden;
+    transform: translateY(-50%);    
 }
 
-.animation{
-  animation: typewriter 7s steps(37) 1s infinite both,
-             blinkCursor 500ms steps(37) infinite;
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
 }
-
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 580px;
-  }
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 11em;}
 }
-
-@keyframes blinkCursor{
-  from {
-    border-right-color: rgb(214, 35, 35);
-  }
-  to {
-    border-right-color: transparent;
-  }
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(227, 26, 26, 0.75);}
+  to{border-right-color: transparent;}
 }
-
 
 /* Typewriter Animation */

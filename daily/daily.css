@@ -443,8 +443,7 @@ text {
   }
   
   /* End Wrapper */
-
-
+  
   /* Footer Start */
 
   button {
@@ -577,7 +576,7 @@ text {
     width: 414px;
   }
 }
-z
+
 @keyframes blinkCursor{
   from {
     border-right-color: rgb(214, 35, 35);
