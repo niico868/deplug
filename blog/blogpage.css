@@ -217,7 +217,6 @@ body {
     width: 350px;
     background-color: #ffffff;
     border: 1px solid #ececec;
-    margin: 20px;
 }
 
 .blog-img {
@@ -266,6 +265,7 @@ body {
     font-size: 0.9rem;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
     overflow: hidden;
     text-overflow: ellipsis;
     margin: 20px 0px;
@@ -280,7 +280,7 @@ body {
     transition: all ease 0.3s;
 }
 
-@media(max-width:1250px) {
+@media(max-width:1240px) {
     .blog-box {
         width: 300px;
         height: auto;
@@ -308,11 +308,12 @@ body {
 
 @media only screen and (max-width: 1080px) {
     .blog-container {
-        display: fixed;
+        display: relative;
         justify-content: center;
         text-align: center;
         flex-wrap: flex;
         flex-direction: column;
+        margin: 50px 100px;
     }
 
     .blog-box .eman-img {
@@ -321,6 +322,28 @@ body {
         text-align: center;
         padding: 0.8em;
     }
+}
+
+@media only screen and (max-width: 730px) {
+  .blog-container {
+      display: relative;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: flex;
+      flex-direction: column;
+      margin: 50px 40px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .blog-container {
+      display: relative;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: flex;
+      flex-direction: column;
+      margin: 50px 10px;
+  }
 }
 
 @media only screen and (min-width: 1240px) {
