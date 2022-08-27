@@ -416,7 +416,6 @@ footer button {
   }
   
   .footer-distributed .footer-links a:before {
-    content: "·";
     font-size: 20px;
     left: 0;
     color: #fff;
